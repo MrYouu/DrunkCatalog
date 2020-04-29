@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Over the Rainbow' rel='stylesheet'>
+
+        <link type = "text/css" rel = "stylesheet" href = "Files/Style.css">
+        <script type = "text/javascript" src = "Files/functions.js"></script>
+
+        <title>Drunk Catalog</title>
+    </head>
+
+    <body>
+        <div class = "mainPageBackground">
+            <!-- #region Loader -->
+            <div class = "Loader">
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+                <div class = "obj"></div>
+            </div>
+            
+            <script>
+                window.addEventListener("load", function ()
+                {
+                    const Loader = document.querySelector(".Loader")
+                    Loader.className += " hidden";
+                });
+            </script>
+            <!-- #endregion Loader -->
+
+            <div class = "topBar">
+                <a href = "#" class = "Logo">DRINK PLEASE</a>
+                <a href = "index.html" class = "Active" id = "getHidden">HOME</a>
+                <a href = "#" id = "getHidden">SHOTS</a>
+                <a href = "#" id = "getHidden">COCKTAILS</a>
+
+                <a onclick = "openMenu()" class = "threeLineButton">&#9776;</a>
+            </div>
+
+            <div class = "stripeHolder">
+                <p class = "Stripe"></p>
+                <p class = "Stripe" style = "left: 150px;"></p>
+            </div>
+
+            <div class = "imageHolder">
+                <p class = "Image"></p>
+                <p class = "Shadow"></p>
+            </div>
+
+            <h3 class = "Small">Meet our</h3>
+            <h1>DRUNK</h1>
+            <h2 class = "Continue">CATALOG</h2>
+
+            <div class = "newDrinkButton" onclick = "">
+                <p>New Drink</p>
+            </div>
+            <p class = "byWhoSign">by Mr. You</p>
+        </div>
+
+        <div style = "padding-top: 150px;">
+            <h1>Personal Favorites</h1>
+
+        </div>
+    </body>
+</html>
