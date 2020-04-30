@@ -7,11 +7,17 @@
         <script type = "text/javascript" src = "Files/functions.js"></script>
 
         <title>Drunk Catalog</title>
+
+        <script>
+            function hetDeviceWidht()
+            {
+                document.getElementById("Stripes").style.width = screen.width
+            }
+        </script>
     </head>
 
     <body>
-
-        <div class = "stripeHolder">
+        <div class = "stripeHolder" id = "Stripes">
             <p class = "Stripe"></p>
             <p class = "Stripe" style = "left: 150px;"></p>
         </div>
@@ -211,6 +217,10 @@
                     </a>
                     <p style = "display: none;" id = "bn">1</p>
                 </div>
+            </div>
+
+            <div class = "showDrinksButton" onclick = "">
+                <p>Show Me What I Can Drink</p>
             </div>
         </div>
     </body>
