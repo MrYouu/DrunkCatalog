@@ -316,7 +316,7 @@ h4
     width: 500px;
     height: 80px;
     left: calc(50% - 250px);
-    bottom: 140px;
+    top: 500px;
 
     background-color: white;
     box-shadow: 0px 50px 50px rgba(0, 0, 0, .5);
@@ -352,7 +352,7 @@ h4
 {
     position: absolute;
     width: 100%;
-    bottom: 0px;
+    top: 560px;
     font-family: 'Over the Rainbow';
     font-style: normal;
     font-weight: normal;
@@ -643,13 +643,13 @@ h4
 
     .newDrinkButton
     {
-        bottom: 200px;
+        top: 560px;
     }
 
     .byWhoSign
     {
         right: -120px;
-        bottom: -40px;
+        top: 580px;
     }
 }
 
