@@ -40,6 +40,19 @@
                     const Loader = document.querySelector(".Loader")
                     Loader.className += " hidden";
                 });
+
+
+                var mybutton = document.getElementById("toTop");
+                
+                function topFunction()
+                {
+                    window.scroll(
+                    {
+                        top: 870,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }
             </script>
             <!-- #endregion Loader -->
 
@@ -61,14 +74,14 @@
             <h1>DRUNK</h1>
             <h2 class = "Continue">CATALOG</h2>
 
-            <div class = "newDrinkButton" onclick = "">
+            <div class = "newDrinkButton" onclick = "topFunction()" id = "toTop">
                 <p>New Drink</p>
             </div>
             <p class = "byWhoSign">by Mr. You</p>
         </div>
 
         <div style = "padding-top: 300px;">
-            <h1>Select the alcohol you have on you right now</h1>
+            <h1 id = "alcoholSelection">Select the alcohol you have on you right now</h1>
 
             <div class = "gridLineRow">
 				<div class = "gridLikeColumn" id = "aa" onclick = "alcoholSelection(document.getElementById('aa'), document.getElementById('ab'), '#ac', '#ad', document.getElementById('ae'))">
@@ -135,28 +148,68 @@
                     <p style = "display: none;" id = "at">1</p>
                 </div>
                 
-                <div class = "gridLikeColumn">
-                    <a href = "#">
-                        Tequila
+                <div class = "gridLikeColumn" id = "au" onclick = "alcoholSelection(document.getElementById('au'), document.getElementById('av'), '#aw', '#ax', document.getElementById('ay'))">
+                    <a>
+                        <img src = "Images/Alcohols/tequilaBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "av">Tequila</p>
+                        <p class = "alcoholNormalText" id = "aw">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "ax">26</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "aw">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "ax">35% - 55%</ins>
+                        </p>
                     </a>
+                    <p style = "display: none;" id = "ay">1</p>
                 </div>
                 
-                <div class = "gridLikeColumn">
-                    <a href = "#">
-                        Brandy
+                <div class = "gridLikeColumn" id = "az" onclick = "alcoholSelection(document.getElementById('az'), document.getElementById('ba'), '#bb', '#bc', document.getElementById('bd'))">
+                    <a>
+                        <img src = "Images/Alcohols/brandyBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "ba">Brandy</p>
+                        <p class = "alcoholNormalText" id = "bb">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "bc">22</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "bb">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "bc">60%</ins>
+                        </p>
                     </a>
+                    <p style = "display: none;" id = "bd">1</p>
                 </div>
                 
-                <div class = "gridLikeColumn">
-                    <a href = "#">
-                        Wine
+                <div class = "gridLikeColumn" id = "be" onclick = "alcoholSelection(document.getElementById('be'), document.getElementById('bf'), '#bg', '#bh', document.getElementById('bi'))">
+                    <a>
+                        <img src = "Images/Alcohols/wineBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "bf">Wine</p>
+                        <p class = "alcoholNormalText" id = "bg">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "bh">14</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "bg">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "bh">11% - 13%</ins>
+                        </p>
                     </a>
+                    <p style = "display: none;" id = "bi">1</p>
                 </div>
                 
-                <div class = "gridLikeColumn">
-                    <a href = "#">
-                        Liqueur
+                <div class = "gridLikeColumn" id = "bj" onclick = "alcoholSelection(document.getElementById('bj'), document.getElementById('bk'), '#bl', '#bm', document.getElementById('bn'))">
+                    <a>
+                        <img src = "Images/Alcohols/liqueurBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "bk">Liqueur</p>
+                        <p class = "alcoholNormalText" id = "bl">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "bm">18</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "bl">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "bm">15% - 55%</ins>
+                        </p>
                     </a>
+                    <p style = "display: none;" id = "bn">1</p>
                 </div>
             </div>
         </div>
