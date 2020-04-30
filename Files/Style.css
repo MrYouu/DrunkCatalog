@@ -288,7 +288,7 @@ h4
 .stripeHolder
 {
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 1500px;
     left: 350px;
     top: -202px;
@@ -518,6 +518,45 @@ h4
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 1);
 }
 
+.showDrinksButton
+{
+    position: absolute;
+    width: 800px;
+    height: 80px;
+    left: calc(50% - 400px);
+    margin-top: 950px;
+    margin-bottom: 100px;
+
+    background-color: white;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, .5);
+    border-radius: 999px;
+    border-color: white;
+
+    z-index: 2;
+
+    transition: ease .3s;
+    animation: flyBottom 1s ease-out forwards;
+    transform: translateY(250px);
+    opacity: 0;
+}
+
+.showDrinksButton p
+{
+    width: 100%;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+}
+
+.showDrinksButton:hover
+{
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, .75);
+    background-color: #ddd;
+}
+
 @media screen and (max-width: 1300px)
 {
     .gridLikeColumn
@@ -528,6 +567,11 @@ h4
     .alcoholImage
     {
         margin-top: 25px;
+    }
+
+    .showDrinksButton
+    {
+        margin-top: 1070px;
     }
 }
 
@@ -541,6 +585,11 @@ h4
     .alcoholImage
     {
         margin-top: 35px;
+    }
+
+    .showDrinksButton
+    {
+        margin-top: 1150px;
     }
 }
 
@@ -558,6 +607,11 @@ h4
     {
         width: calc(100% - 40px);
         margin-left: 25px;
+    }
+
+    .showDrinksButton
+    {
+        margin-top: 2230px;
     }
 }
 
@@ -589,6 +643,19 @@ h4
     .byWhoSign
     {
         right: -230px;
+    }
+
+    .showDrinksButton
+    {
+        width: 650px;
+        height: 80px;
+        left: calc(50% - 325px);
+    }
+
+    .showDrinksButton p
+    {
+        margin-top: 15px;
+        font-size: 40px;
     }
 }
 
@@ -666,6 +733,19 @@ h4
     {
         right: 0px;
     }
+
+    .showDrinksButton
+    {
+        width: 500px;
+        height: 60px;
+        left: calc(50% - 250px);
+    }
+
+    .showDrinksButton p
+    {
+        margin-top: 13px;
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 600px)
@@ -716,6 +796,11 @@ h4
     {
         height: 400px;
     }
+
+    .showDrinksButton
+    {
+        margin-top: 3430px;
+    }
 }
 
 @media screen and (max-width: 500px)
@@ -752,6 +837,24 @@ h4
     .gridLikeColumn
     {
         height: 430px;
+    }
+
+    .showDrinksButton
+    {
+        width: 400px;
+        height: 50px;
+        left: calc(50% - 200px);
+    }
+
+    .showDrinksButton p
+    {
+        margin-top: 11px;
+        font-size: 25px;
+    }
+
+    .showDrinksButton
+    {
+        margin-top: 3670px;
     }
 }
 
