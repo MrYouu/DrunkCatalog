@@ -66,9 +66,98 @@
             <p class = "byWhoSign">by Mr. You</p>
         </div>
 
-        <div style = "padding-top: 150px;">
-            <h1>Personal Favorites</h1>
+        <div style = "padding-top: 300px;">
+            <h1>Select the alcohol you have on you right now</h1>
 
+            <div class = "gridLineRow">
+				<div class = "gridLikeColumn" id = "aa" onclick = "alcoholSelection(document.getElementById('aa'), document.getElementById('ab'), '#ac', '#ad', document.getElementById('ae'))">
+                    <a>
+                        <img src = "Images/Alcohols/ginBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "ab">Gin</p>
+                        <p class = "alcoholNormalText" id = "ac">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "ad">44</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "ac">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "ad">40%</ins>
+                        </p>
+                    </a>
+                    <p style = "display: none;" id = "ae">1</p>
+                </div>
+
+                <div class = "gridLikeColumn" id = "af" onclick = "alcoholSelection(document.getElementById('af'), document.getElementById('ag'), '#ah', '#ai', document.getElementById('aj'))">
+                    <a>
+                        <img src = "Images/Alcohols/vodkaBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "ag">Vodka</p>
+                        <p class = "alcoholNormalText" id = "ah">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "ai">34</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "ah">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "ai">40%</ins>
+                        </p>
+                    </a>
+                    <p style = "display: none;" id = "aj">1</p>
+                </div>
+                
+                <div class = "gridLikeColumn" id = "ak" onclick = "alcoholSelection(document.getElementById('ak'), document.getElementById('al'), '#am', '#an', document.getElementById('ao'))">
+                    <a>
+                        <img src = "Images/Alcohols/whiskyBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "al">Whiskey</p>
+                        <p class = "alcoholNormalText" id = "am">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "an">32</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "am">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "an">40% - 68%</ins>
+                        </p>
+                    </a>
+                    <p style = "display: none;" id = "ao">1</p>
+                </div>
+                
+                <div class = "gridLikeColumn" id = "ap" onclick = "alcoholSelection(document.getElementById('ap'), document.getElementById('aq'), '#ar', '#as', document.getElementById('at'))">
+                    <a>
+                        <img src = "Images/Alcohols/rumBottle.png" class = "alcoholImage">
+                        <p class = "alcoholTitleText" id = "aq">Rum</p>
+                        <p class = "alcoholNormalText" id = "ar">
+                            Number of cocktails available with this alcohol:
+                            <ins class = "availableCocktailsNumber" id = "as">32</ins>
+                        </p>
+                        <p class = "alcoholNormalText" id = "ar">
+                            Alcohol percentage:
+                            <ins class = "availableCocktailsNumber" id = "as">40%</ins>
+                        </p>
+                    </a>
+                    <p style = "display: none;" id = "at">1</p>
+                </div>
+                
+                <div class = "gridLikeColumn">
+                    <a href = "#">
+                        Tequila
+                    </a>
+                </div>
+                
+                <div class = "gridLikeColumn">
+                    <a href = "#">
+                        Brandy
+                    </a>
+                </div>
+                
+                <div class = "gridLikeColumn">
+                    <a href = "#">
+                        Wine
+                    </a>
+                </div>
+                
+                <div class = "gridLikeColumn">
+                    <a href = "#">
+                        Liqueur
+                    </a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
