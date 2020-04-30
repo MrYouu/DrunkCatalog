@@ -1,6 +1,7 @@
 html
 {
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -14,7 +15,8 @@ h1
 {
     text-align: center;
     padding-bottom: 50px;
-    width: 100%;
+    width: calc(100% - 40px);
+    padding-left: 20px;
     font-size: 50px;
     color: white;
     text-shadow: 0px 50px 50px rgba(0, 0, 0, 0.5);
@@ -265,7 +267,8 @@ h4
     height: 600px;
     left: 65px;
     background: url(../Images/mainPageBottle.png);
-    background-size: 300px 550px;
+    background-size: 210px 550px;
+    /*background-size: 300px 550px;*/
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
@@ -488,6 +491,8 @@ h4
     color: white;
     font-size: 20px;
     font-weight: 500;
+    margin-left: 55px;
+    margin-right: 20px;
 }
 
 .alcoholImage
@@ -513,11 +518,46 @@ h4
 	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 1);
 }
 
+@media screen and (max-width: 1300px)
+{
+    .gridLikeColumn
+    {
+        height: 230px;
+    }
+
+    .alcoholImage
+    {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 1250px)
+{
+    .gridLikeColumn
+    {
+        height: 250px;
+    }
+
+    .alcoholImage
+    {
+        margin-top: 35px;
+    }
+}
+
 @media screen and (max-width: 1200px)
 {
     .byWhoSign
     {
         right: -320px;
+    }
+}
+
+@media screen and (max-width: 1100px)
+{
+    .gridLikeColumn
+    {
+        width: calc(100% - 40px);
+        margin-left: 25px;
     }
 }
 
@@ -585,12 +625,17 @@ h4
 
     .mainPageBackground .imageHolder
     {
-        left: calc(50% - (350px / 2));
+        left: calc(50% - (350px / 2) + 10px);
     }
 }
 
 @media screen and (max-width: 700px)
 {
+    h1
+    {
+        font-size: 35px;
+    }
+
     #getHidden
     {
         display: none;
@@ -651,10 +696,36 @@ h4
         right: -120px;
         top: 580px;
     }
+
+    .alcoholTitleText
+    {
+        text-align: center;
+    }
+
+    .alcoholImage
+    {
+        float: none;
+        margin-top: 30px;
+        margin-left: calc(50% - 40px);
+        margin-right: auto;
+        width: 80px;
+        height: auto;
+    }
+
+    .gridLikeColumn
+    {
+        height: 400px;
+    }
 }
 
 @media screen and (max-width: 500px)
 {
+    h1
+    {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
     .mainPageBackground .Small
     {
         font-size: 30px;
@@ -676,6 +747,11 @@ h4
     .byWhoSign
     {
         right: 0px;
+    }
+
+    .gridLikeColumn
+    {
+        height: 430px;
     }
 }
 
