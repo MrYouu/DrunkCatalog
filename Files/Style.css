@@ -431,6 +431,7 @@ h4
 }
 /*#endregion Top bar */
 
+/*#region Alcohol selection */
 .Column
 {
 	float: left;
@@ -452,7 +453,6 @@ h4
 
 .gridLineRow
 {
-    position: absolute;
     width: calc(100% - 70px);
     padding-left: 30px;
 }
@@ -556,7 +556,22 @@ h4
     box-shadow: 0px 50px 50px rgba(0, 0, 0, .75);
     background-color: #ddd;
 }
+/*#endregion Alcohol selection */
 
+hr.Rounded
+{
+    width: 90%;
+    border-top: 6.5px solid #FCCB16;
+    border-radius: 5px;
+}
+
+#afterAlcoholSelection
+{
+    margin-top: 1020px;
+    margin-bottom: 100px;
+}
+
+/*#region @Media 1300 - 1000 */
 @media screen and (max-width: 1300px)
 {
     .gridLikeColumn
@@ -627,7 +642,9 @@ h4
         right: 100px;
     }
 }
+/*#endregion @Media 1300 - 1000 */
 
+/*#region @Media 900 - 800 */
 @media screen and (max-width: 900px)
 {
     .mainPageBackground .Small
@@ -695,7 +712,9 @@ h4
         left: calc(50% - (350px / 2) + 10px);
     }
 }
+/*#endregion @Media 900 - 800 */
 
+/*#region @Media 700 - 600 */
 @media screen and (max-width: 700px)
 {
     h1
@@ -802,7 +821,9 @@ h4
         margin-top: 3430px;
     }
 }
+/*#endregion @Media 700 - 600 */
 
+/*#region @Media 500 */
 @media screen and (max-width: 500px)
 {
     h1
@@ -857,6 +878,7 @@ h4
         margin-top: 3670px;
     }
 }
+/*#endregion @Media 500 */
 
 /*#region Animations */
 @keyframes skewIn
