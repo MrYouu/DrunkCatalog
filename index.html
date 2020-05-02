@@ -17,60 +17,59 @@
     </head>
 
     <body>
+        <!-- #region Loader -->
+        <div class = "Loader">
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+            <div class = "obj"></div>
+        </div>
+        
+        <script>
+            window.addEventListener("load", function ()
+            {
+                const Loader = document.querySelector(".Loader")
+                Loader.className += " hidden";
+            });
+
+            var mybutton = document.getElementById("toTop");
+            
+            function topFunction()
+            {
+                window.scroll(
+                {
+                    top: 870,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
+        <!-- #endregion Loader -->
+
+        <div class = "topBar">
+            <a href = "#" class = "Logo">DRINK PLEASE</a>
+            <a href = "index.html" class = "Active" id = "getHidden">HOME</a>
+            <a href = "#" id = "getHidden">SHOTS</a>
+            <a href = "#" id = "getHidden">COCKTAILS</a>
+
+            <a onclick = "openMenu()" class = "threeLineButton">&#9776;</a>
+        </div>
+
         <div class = "stripeHolder" id = "Stripes">
             <p class = "Stripe"></p>
             <p class = "Stripe" style = "left: 150px;"></p>
         </div>
 
         <div class = "mainPageBackground">
-            <!-- #region Loader -->
-            <div class = "Loader">
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-                <div class = "obj"></div>
-            </div>
-            
-            <script>
-                window.addEventListener("load", function ()
-                {
-                    const Loader = document.querySelector(".Loader")
-                    Loader.className += " hidden";
-                });
-
-
-                var mybutton = document.getElementById("toTop");
-                
-                function topFunction()
-                {
-                    window.scroll(
-                    {
-                        top: 870,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
-                }
-            </script>
-            <!-- #endregion Loader -->
-
-            <div class = "topBar">
-                <a href = "#" class = "Logo">DRINK PLEASE</a>
-                <a href = "index.html" class = "Active" id = "getHidden">HOME</a>
-                <a href = "#" id = "getHidden">SHOTS</a>
-                <a href = "#" id = "getHidden">COCKTAILS</a>
-
-                <a onclick = "openMenu()" class = "threeLineButton">&#9776;</a>
-            </div>
-
             <div class = "imageHolder">
                 <p class = "Image"></p>
                 <p class = "Shadow"></p>
