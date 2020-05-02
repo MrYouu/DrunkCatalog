@@ -287,12 +287,11 @@ h4
 
 .stripeHolder
 {
-    display: none;
     position: absolute;
-    width: auto;
+    width: 100%;
     height: 1500px;
-    left: 350px;
     top: -202px;
+    overflow: hidden;
 
     transition: ease .3s;
 }
@@ -302,7 +301,24 @@ h4
     position: absolute;
     width: 100px;
     height: 1500px;
-    left: 0;
+    left: 400;
+    top: 0;
+    background: #FCCB16;
+    transform: skew(-45deg);
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+
+    transition: ease .3s;
+    animation: skewIn 1s ease-out forwards;
+    animation-delay: .25s;
+    opacity: 0;
+}
+
+.Stripe2
+{
+    position: absolute;
+    width: 100px;
+    height: 1500px;
+    left: 550;
     top: 0;
     background: #FCCB16;
     transform: skew(-45deg);
@@ -744,9 +760,14 @@ hr.Rounded
         float: left;
     }
 
-    .stripeHolder
+    .Stripe
     {
-        left: 30px;
+        left: 100px;
+    }
+
+    .Stripe2
+    {
+        left: 250px;
     }
 
     .byWhoSign
@@ -846,9 +867,14 @@ hr.Rounded
         right: 20px;
     }
 
-    .stripeHolder
+    .Stripe
     {
-        left: -70px;
+        left: -20px;
+    }
+
+    .Stripe2
+    {
+        left: 130px;
     }
 
     .byWhoSign
