@@ -1,10 +1,10 @@
-<html>
+<html id = "html">
     <head>
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Over the Rainbow' rel='stylesheet'>
         <link rel = "icon" href = "Images/tabIcon.png" type = "image" sizes = "16x16">
 
-        <meta name = "viewport" content = "width = device-width, initial-scale = .9">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
 
         <link type = "text/css" rel = "stylesheet" href = "Files/Style.css">
         <script type = "text/javascript" src = "Files/functions.js"></script>
@@ -58,13 +58,21 @@
         </script>
         <!-- #endregion Loader -->
 
-        <div class = "topBar">
+        <div class = "topBar" id = "topBar">
             <a href = "#" class = "Logo">DRINK PLEASE</a>
             <a href = "index.html" class = "Active" id = "getHidden">HOME</a>
             <a href = "#" id = "getHidden">SHOTS</a>
             <a href = "#" id = "getHidden">COCKTAILS</a>
 
-            <a onclick = "openMenu()" class = "threeLineButton">&#9776;</a>
+            <a onclick = "openMenu()" class = "threeLineButton" href = "javascript: void(0)">&#9776;</a>
+        </div>
+
+        <div class = "sideBar" id = "sideBar">
+            <a onclick = "closeMenu()" class = "closeButton">&times;</a><br><br><br>
+
+            <a href = "index.html" class = "Active">HOME</a><br>
+            <a href = "#">SHOTS</a><br>
+            <a href = "#">COCKTAILS</a>
         </div>
 
         <div class = "stripeHolder" id = "Stripes">
@@ -73,19 +81,21 @@
         </div>
 
         <div class = "mainPageBackground">
-            <div class = "imageHolder">
-                <p class = "Image"></p>
-                <p class = "Shadow"></p>
-            </div>
+            <div id = "mainPageBackground">
+                <div class = "imageHolder">
+                    <p class = "Image"></p>
+                    <p class = "Shadow"></p>
+                </div>
 
-            <h3 class = "Small">Meet our</h3>
-            <h1>DRUNK</h1>
-            <h2 class = "Continue">CATALOG</h2>
+                <h3 class = "Small">Meet our</h3>
+                <h1>DRUNK</h1>
+                <h2 class = "Continue">CATALOG</h2>
 
-            <div class = "newDrinkButton" onclick = "topFunction()" id = "toTop">
-                <p>New Drink</p>
+                <div class = "newDrinkButton" onclick = "topFunction()" id = "toTop">
+                    <p>New Drink</p>
+                </div>
+                <p class = "byWhoSign">by Mr. You</p>
             </div>
-            <p class = "byWhoSign">by Mr. You</p>
         </div>
 
         <div style = "padding-top: 300px; position: absolute; z-index: 2;">
