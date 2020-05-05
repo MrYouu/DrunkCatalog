@@ -33,3 +33,21 @@ function alcoholSelection( b, c, d, e, f)
         f.innerHTML = "1";
     }
 }
+
+function openMenu()
+{
+    document.getElementById("sideBar").style.height = "calc(100% + 75px)";
+    document.getElementById("html").style.overflowY = "hidden";
+    document.getElementById("mainPageBackground").style.filter = "blur(5px)";
+    document.getElementById("topBar").style.filter = "blur(5px)";
+    document.getElementById("Stripes").style.filter = "blur(5px)";
+}
+
+function closeMenu()
+{
+    document.getElementById("sideBar").style.height = "0";
+    document.getElementById("html").style.overflowY = "auto";
+    document.getElementById("mainPageBackground").style.filter = "none";
+    document.getElementById("topBar").style.filter = "none";
+    document.getElementById("Stripes").style.filter = "none";
+}
